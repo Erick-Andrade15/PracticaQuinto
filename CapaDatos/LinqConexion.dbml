@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PracticaQuinto" Class="LinqConexionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-K88719O;Initial Catalog=PracticaQuinto;Integrated Security=True" SettingsObjectName="CapaDatos.Properties.Settings" SettingsPropertyName="PracticaQuintoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tbl_Rol" Member="Tbl_Rol">
+    <Type Name="Tbl_Rol">
+      <Column Name="id_rol" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_rol" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="estado_rol" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_Usuario" Member="Tbl_Usuario">
+    <Type Name="Tbl_Usuario">
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cedula_usu" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="nombre_usu" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion_usu" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono_usu_" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="correo_usu" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="usuario_usu" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contrasenia_usu" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="salt_contrasenia_usu" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="recupero_contrasenia_usu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rol_usu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="foto_usu" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="fechacreacion_usu" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="estado_usu" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

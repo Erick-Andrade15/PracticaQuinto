@@ -1,0 +1,78 @@
+html, body {
+	height: 100%;
+}
+
+	body.login-page {
+		background-image: url(https://www.xtrafondos.com/wallpapers/resized/montanas-minimalista-flat-3128.jpg?s=large);
+		background-size: 1100px;
+		font-size: 14px;
+	}
+
+.login-page .brand {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 40px auto;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	margin-top: 25px;
+	margin-bottom: 20px;
+	z-index: 1;
+}
+
+	.login-page .brand img {
+		width: 100%;
+	}
+
+.login-page .card-wrapper {
+	width: 500px;
+}
+
+.login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+	.login-page .card.fat {
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+	.login-page .card .card-title {
+		margin-bottom: 30px;
+	}
+
+.login-page .form-control {
+	border-width: 2.3px;
+}
+
+.login-page .form-group label {
+	width: 100%;
+}
+
+.login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+.login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.login-page .card.fat {
+		padding: 0;
+	}
+
+		.login-page .card.fat .card-body {
+			padding: 15px;
+		}
+}
